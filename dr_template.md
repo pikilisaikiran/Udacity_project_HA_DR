@@ -16,8 +16,8 @@ us-west-1
 | load balancer clusters | load balancer clusters to prevent pointing directly at the web server application  |  | 2 replicas with 3 nodes each | replicated in another region |
 | database clusters | database clusters with 3 nodes to store the data  | t3.micro | 2 replicas with 3 nodes each | replicated in another region |
 | github repo | Used to store the terraform code |  |  |  |
-| kubernetes monitoring stack | For monitoring the application |  |  |  |
-| Monitoring platform | Prometheus and Grafana  |  |  |  |
+| kubernetes monitoring stack | For monitoring the application |  | 2 replicas | replicated in another region |
+| Monitoring platform | Prometheus and Grafana  |  | 2 replicas | replicated in another region |
 | ssh keys | for interacting with EC2 instances |  |  |  |
 | AMI image | custom AMI image created by us |  |  |  |
 
