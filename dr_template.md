@@ -1,11 +1,16 @@
 # Infrastructure
 
 ## AWS Zones
-us-east-1
+
+us-east-2a
+
+us-east-2b
 
 us-east-2
 
 us-west-1
+
+us-west-1b
 
 ## Servers and Clusters
 
@@ -34,7 +39,7 @@ Ensure the infrastructure is set up and working in the DR site.
 
 ## Steps:
 
-Increase replica set to 7 nodes with an Arbiter in a third DataCenter.
+Increase replica set to 2 nodes with an Arbiter in a third DataCenter.
 
 Replace one of the nodes with an Arbiter node on a low-end host in a separate DC with visibility to the other two DCs.
 
