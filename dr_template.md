@@ -12,19 +12,21 @@ us-west-1
 ### Table 1.1 Summary
 | Asset      | Purpose           | Size                                                                   | Qty                                                             | DR                                                                                                           |
 |------------|-------------------|------------------------------------------------------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| server clusters | server clusters with 3 nodes for an application/service  | t3.micro | 2 replicas with 3 nodes each | replicated in another region |
-| load balancer clusters | load balancer clusters to prevent pointing directly at the web server application  |  | 2 replicas with 3 nodes each | replicated in another region |
-| database clusters | database clusters with 3 nodes to store the data  | t3.micro | 2 replicas with 3 nodes each | replicated in another region |
-| github repo | Used to store the terraform code |  |  |  |
-| kubernetes monitoring stack | For monitoring the application |  | 2 replicas | replicated in another region |
+| VM | VMs with 3 instances for an application/service  | t3.micro | 3 EC2 instances | replicated in another region |
+| kubernetes cluster | For monitoring the application | t3.micro | 2 nodes | replicated in another region |
+| VPC | To access the application |  |  |  |
+| Application load balancer | load balancer clusters to prevent pointing directly at the web server application  |  | | replicated in another region |
+| database clusters | database clusters with 2 instance nodes to store the data  | t3.micro | 2 replicas with 2 nodes each | replicated in another region |
 | Monitoring platform | Prometheus and Grafana  |  | 2 replicas | replicated in another region |
 | ssh keys | for interacting with EC2 instances |  |  |  |
-| AMI image | custom AMI image created by us |  |  |  |
 
 ### Descriptions
-The Server cluster with 3 nodes hosts a service and 3 nodes helps in HA.
-The load balancer clusters with 3 load balancers helps in preventing pointing directly at the web server application.
-The database clusters with 3 nodes reposible to store the user data, application data etc.
+
+The VMs with 3 nodes hosts a service and 3 nodes helps in HA.
+
+The load balancer clusters helps in preventing pointing directly at the web server application.
+
+The database clusters with 2 nodes reposible to store the user data, application data etc.
 
 ## DR Plan
 ### Pre-Steps:
