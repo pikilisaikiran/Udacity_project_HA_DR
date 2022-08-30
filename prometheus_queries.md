@@ -16,4 +16,4 @@ sum(rate(apiserver_requests_total{job="apiserver"}[$__range]))
 ## Error Budget - Remaining Error Budget
 ### The error budget is 20%
 
-1 - ((1 - (sum(increase(apiserver_request_total{job="apiserver", code="200"}[15d])) by (verb)) / sum(increase(apiserver_request_total{job="apiserver"}[15d])) by (verb)) / (1 - .90))
+1 - ((1 - (sum(increase(apiserver_request_total{job="apiserver", code="200"}[15d])) by (verb)) / sum(increase(apiserver_request_total{job="apiserver"}[15d])) by (verb)) / (1 - .80))
