@@ -18,7 +18,7 @@ us-west-1b
 | Asset      | Purpose           | Size                                                                   | Qty                                                             | DR                                                                                                           |
 |------------|-------------------|------------------------------------------------------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | VM | VMs with 3 instances for an application/service  | t3.micro | 3 EC2 instances | replicated in another region |
-| kubernetes cluster | For monitoring the application | t3.micro | 2 nodes | replicated in another region |
+| kubernetes cluster | For deploying our applications | t3.micro | 2 nodes | replicated in another region |
 | VPC | To access the application |  |  |  |
 | Application load balancer | load balancer clusters to prevent pointing directly at the web server application  |  | | replicated in another region |
 | database clusters | database clusters with 2 instance nodes to store the data  | t3.micro | 2 replicas with 2 nodes each | replicated in another region |
@@ -29,9 +29,17 @@ us-west-1b
 
 The VMs with 3 nodes hosts a service and 3 nodes helps in HA.
 
+Kubernetes cluster is a group of nodes that runs the pods of our deployed application.
+
+VPC used to separate our cluster from other infra in the same region.
+
 The load balancer clusters helps in preventing pointing directly at the web server application.
 
 The database clusters with 2 nodes reposible to store the user data, application data etc.
+
+Monitoring platfrom includes Prometheus and Grafana, which are used for monitoring the infrasturcture and deployed applications/services.
+
+ssh keys are very important for remotely connecting to our nodes.
 
 ## DR Plan
 ### Pre-Steps:
