@@ -1,0 +1,61 @@
+NAME          TYPE           CLUSTER-IP       EXTERNAL-IP                                                                     PORT(S)        AGE
+blue-svc      LoadBalancer   172.20.178.124   afdca6b33932445a897035fedbc08f0f-d422ba174717f2be.elb.us-east-2.amazonaws.com   80:30215/TCP   167m
+canary-svc    LoadBalancer   172.20.218.69    ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com   80:31097/TCP   126m
+hello-world   LoadBalancer   172.20.143.174   a9bdd71d41052436d9399e3c646cdad7-9144c57139bd28bb.elb.us-east-2.amazonaws.com   80:30322/TCP   137m
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 1</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 2</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 1</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 1</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 2</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 1</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 1</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 1</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 2</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 1</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 2</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 2</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 2</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ curl ae747ff8e0c774eeaab5c1abd98f6df0-afc13847dcdfea17.elb.us-east-2.amazonaws.com
+<html>
+<h1>This is version 2</h1>
+</html>
+[cloudshell-user@ip-10-0-158-192 ~]$ 
